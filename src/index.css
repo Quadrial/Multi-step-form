@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .btn {
+    @apply text-white rounded-full w-10 h-10 flex items-center justify-center border-2 border-gray-400 hover:bg-[#94a3b8];
+  }
+}
+@layer homeage {
+  .container {
+    @apply max-w-full px-5 mx-auto w-[1440px];
+  }
+
+  .btn {
+    @apply text-white rounded-full w-10 h-10 flex items-center justify-center border-2 border-gray-400 hover:bg-[#94a3b8];
+  }
+
+  @media only screen and (max-width: 375px) {
+    .element h1 {
+      @apply text-[18px] md:text-[22px] lg:text-[32px];
+    }
+    .element div,
+    p,
+    h3,
+    h2 {
+      @apply text-[15px] md:text-[18px] lg:text-[20px] bg-[50%] w-[300p];
+    }
+  }
+}
